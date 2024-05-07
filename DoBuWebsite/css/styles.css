@@ -1,0 +1,1023 @@
+body{
+    margin: 0;
+    background-color: #1a2e4d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo{
+    height: 40px;
+    width: 70px;
+}
+.imgloc{
+    float: left;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    z-index: 100; /* Ensure it's on top of other elements */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+}
+li{
+    float: right;
+}
+li a{
+    display: block;
+    font-family:'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    color: black;
+    background-color:#203759;
+}
+li a:is(:link, :active, :visited) {
+    color: white;
+    text-decoration: none;
+}
+  
+a:is(:link, :active, :visited).active {
+    color: white;
+    background-color: #29446d;
+}
+.btn {
+    display: block;
+    float: right;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 14px 16px; 
+}
+.btn:hover {
+    background-color: #203759;
+    color: black;
+}
+.profile-link {
+    float: right;
+}
+.social-media-icons {
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3));
+}
+.social-media-icons a {
+    color: #449cbf;
+    font-size: 24px;
+    margin: 0 10px; 
+    text-decoration: none;
+}
+.social-media-icons a:hover {
+    color: #ffffff;
+}
+h1, h2, h3, p{
+    text-align: center;
+    padding-top: 40px;
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+/*schedule page*/
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+.table-container h1{
+    color: white;
+    margin: 35px;
+}
+table, th, td {
+    border: 2px solid #1a2e4d;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+th.timetable-title{
+    color: black;
+}
+td {
+    padding: 10px;
+    background-color: #29446d;
+    color: white;
+}
+th {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #449cbf;
+    color: white;
+}
+th.day{
+    font-weight: bold;
+    padding: 10px;
+    background-color: #2a7694;
+    color: white;
+}
+th.time{
+    font-weight: bold;
+    padding: 10px;
+    background-color: #478097;
+    color: white;
+}
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Add horizontal scrollbar if the table overflows */
+    margin-bottom: 39px;
+}
+
+/*classes page*/
+
+.prices-and-membership h1{
+    padding-top: 70px;
+    color: white;
+}
+.class-options {
+    background-color: #449cbf;
+    width: 730px;
+    display: flex; 
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+.class-options:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+.class-options h3 {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 30px;
+    margin-right: 20px;
+    padding-top: 0;
+    color: #0E2954;
+}
+.class-options p {
+    padding: 0;
+    color: white;
+}
+.fee {
+    background-color: #ffffff;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+.fee h2{
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+.fee p{
+    padding: 0;
+    color: #0E2954;
+    margin-top: 0;
+}
+.fee.hourly-padding {
+    padding-left: 26.5px; 
+    padding-right: 26.5px; 
+}
+.fee.membership {
+    padding: 36px;
+    padding-left: 27px; 
+    padding-right: 27px;
+}
+.fee.membership h2{
+    padding: 0;
+}
+.special-courses h1{
+    padding-top: 50px;
+    color: white;
+}
+.special-courses{
+    padding-bottom: 20px;
+}
+.class-options.beginner h3{
+    font-size: 25px;
+}
+.fee.per-visit {
+    padding-left: 32.5px; 
+    padding-right: 32.5px;
+}
+
+/* homepage*/
+
+.background-image {
+    background-image: url('../pictures/homepage bg.png');
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    position: absolute;
+}
+.homepage-text h1{
+    text-align: right;
+    color: white; 
+    padding: 20px; 
+    padding-bottom: 0;
+    padding-top: 15%;
+    margin-bottom: 35px;
+    width: 50%;
+    margin-left: 45%;
+    font-size: 45px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.homepage-text p{
+    text-align: right;
+    color: white; 
+    padding: 10px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 55%;
+    margin-left: 40.5%;
+    line-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button-container {
+    text-align: right;
+    padding-top: 20px; 
+    margin-right:4%;
+}
+.join-button, .learn-more-button {
+    display: inline-block;
+    background-color: white;
+    color: #0E2954;
+    padding: 10px 20px;
+    margin-left: 10px; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-family:'Trebuchet MS', sans-serif;
+}
+.join-button:hover, .learn-more-button:hover {
+    background-color: #29446d;
+    color: white;
+}
+
+/* about page*/
+
+.about-us-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+.about-us-image {
+    background-image: url('../pictures/kicking bg.png');
+    background-size: 100% 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+.about-us h1{
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 0;
+    padding-top: 9.5%;
+    font-size: 30px;
+    color: white;
+}
+.about-us p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 40px;
+    color: white;
+}
+.about-us h1, p{
+    position: relative;
+    z-index: 1;
+}
+.courses-section {
+    background-color: #29446d;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.courses-section h1{
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    margin-top: 0;
+}
+.courses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    clear: both;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.courses h3 {
+    font-size: 25px;
+    color: #449cbf;
+    margin: 0;
+}
+.courses img {
+    width: 400px;
+    height: 300px;
+}
+.courses .description {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 50%;
+    line-height: 30px;
+}
+.description p, h3{
+    padding-top: 0;
+    text-align: justify;
+    color: white;
+}
+.facilities-section h1{
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    margin-top: 0;
+}
+.instructors-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Adjust the gap between instructors as needed */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 5px; 
+    justify-content: center;
+}
+
+.instructors-section h1 {
+    text-align: center; 
+    font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+    margin: 0; 
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    font-size: 24px; 
+    color: white;
+}
+
+.instructor {
+    width: 270px;
+    background-color: #29446d;
+    padding: 5px; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for a smooth effect */
+}
+
+.instructor:hover {
+    background-color: #449cbf; /* Change background color on hover */
+    transform: translate(0, -5px); /* Move 5 pixels up on hover */
+}
+
+.instructor img {
+    width: 200px;
+    height: 200px;
+    display: block; /* Remove any extra space below the image */
+    border-radius: 50%;
+}
+
+.instructor-details {
+    text-align: center;
+    padding: 10px;
+}
+
+.instructor h2 {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.instructor-details h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 15px;
+    color: #449cbf;
+    text-align: center;
+}
+
+.instructor-details p {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.image-container {
+    position: relative;
+    max-width: 850px; 
+    margin: 0 auto;
+    text-align: center;
+}
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slider-button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #ffffff; 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+figure {
+    position: relative;
+    text-align: center;
+}
+figure img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+figure img {
+    width: 850px; 
+    height: 500px; 
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+figcaption {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.1));
+    color: white; /* Caption text color */
+    padding: 15px 0; /* Horizontal padding only */
+    font-size: 16px; /* Caption text font size */
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center; /* Center the caption text horizontally */
+}
+#prev-button {
+    left: 0;
+}
+#next-button {
+    right: 0;
+}
+
+/* contact page*/
+
+.reachteam-section {
+    background-color: #449cbf;
+    text-align: center;
+    height: 40vh;
+}
+.reachteam-section h1{
+    margin: 0;
+    margin-left: 50px;
+    padding-top: 5%;
+    font-size: 35px;
+    color: #0E2954;
+}
+.reachteam-section p{
+    padding-top: 20px;
+    line-height: 25px;
+    color: white;
+}
+.reachteam-section i {
+    font-size: 75px;
+    color: white; 
+    margin-left: 20px;
+}
+.contact-location-section {
+    background-color: #29446d; 
+    display: flex; 
+    height: 100%;
+}
+.contact {
+    display: flex;
+    flex: 1.05;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+}
+.contact h2 {
+    color: white;
+    padding-top: 30px;
+}
+.contact p {
+    color: #449cbf;
+    padding: 20px;
+    padding-bottom: 0;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+.contact-info i {
+    font-size: 35px;
+    margin-right: 10px;
+    color: black; /* Adjust the color as needed */
+    padding-top: 20px;
+}
+.location {
+    background-color: #0E2954; 
+    padding: 20px;
+    padding-bottom: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.location h2 {
+    margin-top: 0;
+    padding-top: 10px;
+    color: #449cbf;
+}
+.location iframe {
+    max-width: 100%; /* Ensure the iframe doesn't exceed the container width */
+}
+
+/*sign-in page*/
+
+.input-group {
+    text-align: right;
+    clear: both;
+    margin-bottom: 10px;
+    margin-right: 80px; 
+}
+.input-group input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.button{
+    display: block;
+    float: right;
+    clear: both;
+    margin-right: 80px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.login-section h1{
+    text-align: right;
+    margin-right: 72%;
+    padding-top: 30%;
+    margin-top: 0;
+    color: white;
+}
+.login-section p{
+    text-align: right;
+    padding: 0;
+    margin-right: 16%;
+    color: #85d7f7;
+}
+.sign-up-section h1{
+    text-align: right;
+    margin-right: 67%;
+    margin-top: 60px;
+    color: white;
+}
+.sign-in-background{
+    background-color: #203759;
+    float: right;
+    width: 500px;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+}
+.sign-in-background-image {
+    background-image: url('../pictures/homepage\ bg.png');
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    position: relative;
+}
+.sign-in-background-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* classes javascript css */
+
+.reservation-form-container {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    height: 230px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.reservation-form-container1 h1{
+    color: white;
+}
+.reservation-form-group label{
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+/* Form left and right columns */
+.reservation-form-left {
+    float: left;
+}
+.reservation-form-right {
+    float: right;
+}
+.reservation-form-right p{
+    padding-top: 0;
+    color: #449cbf;
+}
+/* Form labels and controls */
+.reservation-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+} 
+.reservation-select, .reservation-input {
+    width: 230px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#calculate-cost-btn {
+    background-color: #2a7694;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+#calculate-cost-btn:hover {
+    background-color: #449cbf;
+}
+#payment-modal {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 550px;
+    margin: 0 auto; /* Center the modal horizontally */
+    display: flex; /* Use flexbox to center vertically */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+#payment-method {
+    width: 30%; /* Full width for the select */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px; /* Add spacing */
+    margin-left: 35%;
+}
+#submit-payment {
+    background-color: #2a7694;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+    display: block;
+}
+#submit-payment:hover {
+    background-color: #449cbf;
+}
+.modal-content1 p{
+    color: black;
+    padding-top: 0;
+}
+.modal-content1 h3{
+    text-align: center;
+    color: black;
+}
+/* Style the Confirmation section */
+.confirmation-section h3{
+    color: white;
+    text-align: center;
+}
+.confirmation-table {
+    width: 650px;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.confirmation-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.confirmation-label {
+    flex: 1;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.confirmation-result {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+#submit-button {
+    background-color: #2a7694;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+#submit-button:hover {
+    background-color: #449cbf;
+}
+.class-background{
+    background-color: #203759;
+    padding-bottom: 20px;
+}
+
+/*profile page*/
+
+.user-info {
+    text-align: center;
+    color: black;
+    padding-top: 0;
+}
+.profilepage{
+    background-color: #29446d;
+    height: 100%;
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 63px;
+}
+#profile-picture {
+    text-align: center;
+    color: white;
+}
+#profile-picture h1{
+    margin-top: 0;
+    padding-top: 90px;
+}
+#profile-image {
+    width: 182px; 
+    height: 182px; 
+    object-fit: cover;
+    border-radius: 50%; 
+}
+#file-input {
+    display: none;
+}
+.profile-button {
+    background-color: #449cbf;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+.profilebuttonmove {
+    margin-top: 10px;
+}
+.logout-button {
+    background-color: #449cbf;
+    color: #fff;
+    padding: 10px 10px;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+.logoutbuttonmove {
+    text-align: center;
+}
+.user-info span {
+    color: white;
+    font-style: italic;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Center the modal vertically and horizontally */
+.password-reset-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    z-index: 2;
+    border-radius: 5px;
+}
+.reset-content h2 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.input-resetpass input {
+    margin-bottom: 10px;
+    
+}
+.reset-content {
+    text-align: center;
+}
+span.close {
+    float:left;
+}
+a.forgot-password {
+    text-decoration: none;
+    color: #ffffff;
+}
+a.forgot-password:hover {
+    color: #449cbf;
+}
+
+/*mobile responsiveness*/
+
+@media screen and (max-width: 480px) {
+    
+    /*homepage*/
+    li a{
+        padding: 14px 10px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .logo {
+        height: 35px;
+        width: 55px;
+    }
+    .imgloc{
+        padding-left: 5px;
+    }
+    .background-image {
+        height: 45vh;
+    }
+    .homepage-text h1 {
+        padding: 0;
+        padding-top: 90px;
+        margin-bottom: 130px;
+        margin-right: 30px;
+        width: 50%;
+        float: right;
+        font-size: 30px;
+    }
+    .homepage-text p {
+        text-align: justify;
+        padding: 10px;
+        padding-left: 20px;
+        width: 90%;
+        margin: 0;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .button-container {
+        text-align: center;
+        margin: 0;
+    }
+
+    /*about page*/
+    .about-us-image {
+        height: 40vh;
+    }
+    .about-us h1 {
+        padding-top: 100px;
+        font-size: 35px;
+        margin-bottom: 90px;
+    }
+    .about-us p {
+        padding: 20px;
+        line-height: 25px;
+        font-size: 14px;
+        background-color: #0E2954;
+    }
+    .courses-section h1{
+        margin-top: 55%;
+    }
+    .courses {
+        display: inline;
+        width: 90%;
+    }
+    .courses h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .courses img {
+        display: none;
+    }
+    .courses .description {
+        flex: none;
+        max-width: 100%;   
+    }
+    figure img {
+        height: 350px;
+    }
+    .instructor {
+        margin-bottom: 10px;
+    }
+    .row {
+        display: inline;
+        margin: 0;
+    }
+
+    /*classes page*/
+    .class-options {
+        width: 100%;
+    }
+    .class-options h3 {
+        font-size: 23px;
+    }
+    .class-options.beginner h3 {
+        font-size: 23px;
+    }
+    .reservation-form-container {
+        width: fit-content;
+        display: flex;
+    }
+    #payment-modal {
+        width: fit-content;
+    }
+    #payment-info input {
+        width: 31%;
+    }
+    .confirmation-table {
+        width: 430px;
+        margin: 20px auto;
+        margin-bottom: 0px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /*schedule page*/
+    table {
+        margin-bottom: 40px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    /*contact page*/
+    .reachteam-section h1 {
+        padding-top: 9%;
+        font-size: 30px;
+    }
+    .reachteam-section p {
+        padding-top: 5px;
+        line-height: 25px;
+        color: white;
+    }
+    .contact-location-section {
+        display: block; 
+    }
+    .contact {
+        padding-bottom: 20px;
+    }
+    .contact p {
+        padding-top: 0;
+    }
+    .contact-info i {
+        padding-top: 0;
+    }
+}

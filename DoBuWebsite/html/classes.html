@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="DoBu Martial Arts Gym Website">
+        <meta name="keywords" content="Martial Arts,Martial Arts Gym,Training,Gym,Karate,Jiu-Jitsu,Judo,Muay Thai">
+        <meta name="author" content="Jerra Kirsten R. Javier">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>DoBu Martial Arts Classes Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../script/classes.js"></script>
+        <script src="../script/common.js"></script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <main>
+            <section>
+                <div class="prices-and-membership">
+                    <h1>MEMBERSHIP OPTIONS</h1>
+                    <div class="class-options">
+                        <div class="fee">
+                          <h2>£25</h2>
+                          <p>monthly <br>fee</p>
+                        </div>
+                        <h3>BASIC</h3>
+                        <p>Includes 1 martial art for 2 sessions per week.</p>
+                    </div>
+                    <div class="class-options">
+                        <div class="fee">
+                          <h2>£35</h2>
+                          <p>monthly <br>fee</p>
+                        </div>
+                        <h3>INTERMEDIATE</h3>
+                        <p>Includes 1 martial art for 3 sessions per week.</p>
+                    </div>
+                    <div class="class-options">
+                        <div class="fee">
+                          <h2>£45</h2>
+                          <p>monthly <br>fee</p>
+                        </div>  
+                        <h3>ADVANCED</h3>
+                        <p>Includes any 2 martial art for 5 sessions per week.</p>
+                    </div>
+                    <div class="class-options">
+                        <div class="fee">
+                          <h2>£60</h2>
+                          <p>monthly <br>fee</p>
+                        </div>
+                        <h3>ELITE</h3>
+                        <p>Unlimited classes.</p>
+                    </div>
+                    <div class="class-options">
+                        <div class="fee hourly-padding">
+                          <h2>£15</h2>
+                          <p>hourly<br>fee</p>
+                        </div>
+                        <h3>PRIVATE MARTIAL ARTS</h3>
+                          <p>Practice 1 on 1 with an instructor.</p>
+                    </div>
+                    <div class="class-options">
+                        <div class="fee membership">
+                          <h2>£25</h2>
+                          <!-- <p>monthly <br>fee</p> -->
+                        </div>
+                        <h3>JUNIOR MEMBERSHIP</h3>
+                          <p>Can attend all-kids martial arts sessions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="special-courses">
+                    <h1>SPECIALIST COURSES AND FITNESS TRAINING</h1>
+                    <div class="class-options beginner">
+                      <div class="fee">
+                        <h2>£180</h2>
+                        <p>for six <br> weeks</p>
+                      </div>
+                      <h3>BEGINNERS' SELF-DEFENSE</h3>
+                      <p>Includes 2 x 1-hour session per week.</p>
+                    </div>
+                    <div class="class-options">
+                      <div class="fee per-visit">
+                        <h2>£6</h2>
+                        <p>per <br> visit</p>
+                      </div>
+                      <h3>FITNESS ROOM</h3>
+                      <!-- <p>Use fitness room.</p> -->
+                    </div>
+                    <div class="class-options">
+                      <div class="fee hourly-padding">
+                        <h2>£35</h2>
+                        <p>hourly <br> fee</p>
+                      </div>
+                      <h3>PERSONAL FITNESS TRAINING</h3>
+                      <!-- <p>£35.00 per hour.</p> -->
+                    </div>
+                </div>
+            </section>
+            
+            <div class="class-background">
+            <section class="reservation-form-container1">
+              <h1>Book Reservation</h1>
+                    <form>
+                      <div class="reservation-form-container">
+                        <div class="reservation-form-left">
+                            <div class="reservation-form-group">
+                              <label for="membership" class="reservation-label">Membership:</label>
+                              <select name="membership" id="membership" class="reservation-select" required>
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                                <option value="Elite">Elite</option>
+                                <option value="Private Martial Arts">Private Martial Arts</option>
+                                <option value="Junior Membership">Junior Membership</option>
+                              </select>
+                            </div>
+            
+                            <div class="reservation-form-group">
+                              <label for="courses" class="reservation-label">Specialist Courses & Fitness Training:</label>
+                              <select name="courses" id="courses" class="reservation-select" required>
+                                <option value="Beginner's Self - Defense">Beginner's Self - Defense</option>
+                                <option value="Fitness Room">Fitness Room</option>
+                                <option value="Personal Fitness Training">Personal Fitness Training</option>
+                              </select>
+                            </div>
+          
+                            <div class="reservation-form-group">
+                                <label for="reservation-date" class="reservation-label">Reservation Date:</label>
+                                <input type="date" id="reservation-date" class="reservation-input" required>
+                            </div>
+            
+                            <button type="button" id="calculate-cost-btn" class="reservation-button">Calculate Cost</button>
+                        </div>
+                        <div class="reservation-form-right">
+                            <p id="membership-cost" class="reservation-cost"></p>
+                            <p id="courses-cost" class="reservation-cost"></p>
+                            <p id="overall-cost" class="reservation-cost"></p>
+                        </div>
+                      </div>
+                    </form>  
+            </section>
+
+            <section>
+                <div id="payment-modal" class="modalmodal">
+                  <div class="modal-content1">
+                    <h3>Mode of Payment</h3>
+                    <p>Select your payment method:</p>
+                    <select id="payment-method">
+                      <option value="Credit Card">Credit Card</option>
+                      <option value="PayPal">PayPal</option>
+                      <option value="Bank Transfer">Bank Transfer</option>
+                    </select>             
+                    <div id="payment-info">
+                      <div id="credit-card-info" class="payment-option-info">
+                        <p>Enter your credit card details:</p>
+                        <input type="text" placeholder="Card Number">
+                        <input type="text" placeholder="Expiration Date">
+                        <input type="text" placeholder="CVV">
+                      </div>                 
+                    </div>                 
+                    <button id="submit-payment" class="reservation-button">Submit Payment</button>
+                  </div>
+                </div>
+            </section>
+
+            <section class="confirmation-section" style="display: none;">
+              <h3>Confirmation</h3>
+              <div id="confirmation-details" class="confirmation-table">
+                  <div class="confirmation-row">
+                      <div class="confirmation-label"><strong>Membership:</strong></div>
+                      <div class="confirmation-result"><span id="confirmation-membership"></span></div>
+                  </div>
+                  <div class="confirmation-row">
+                      <div class="confirmation-label"><strong>Specialist Courses & Fitness Training:</strong></div>
+                      <div class="confirmation-result"><span id="confirmation-courses"></span></div>
+                  </div>
+                  <div class="confirmation-row">
+                      <div class="confirmation-label"><strong>Date of Reservation:</strong></div>
+                      <div class= "confirmation-result"><span id="confirmation-reservation-date"></span></div>
+                  </div>
+                  <div class="confirmation-row">
+                      <div class="confirmation-label"><strong>Payment Method:</strong></div>
+                      <div class="confirmation-result"><span id="confirmation-payment-method"></span></div>
+                  </div>
+                  <div class="confirmation-row">
+                      <div class="confirmation-label"><strong>Total Cost:</strong></div>
+                      <div class="confirmation-result"><span id="confirmation-total-cost"></span></div>
+                  </div>
+                  <button id="submit-button" class="reservation-button">Submit</button>
+              </div>
+            </section>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>
